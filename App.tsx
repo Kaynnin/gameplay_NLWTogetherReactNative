@@ -1,21 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react' // Faz a importação do Documento do React
+import {SignIn} from './src/screens/SignIn' // faz a importação do Arquivo da tela SignIn ( Função )
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+export default function App(){ // Define o App como a função default
+  return( // retorna o valor do codigo
+    <SignIn/> // Pega a função SignIn e executa
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
